@@ -1,0 +1,55 @@
+@import url("middlebox.css");
+@import url("sidebar.css");
+
+/** {
+	border: 2px solid brown;
+}*/
+
+/*.ht {
+	height: 100px;
+}*/
+
+.navbar-nav li a {
+/*    line-height: 35px;
+    height: 35px;
+    padding-top: 0;*/
+    font-size: 18px;
+
+}
+
+#brand_img {
+	height: 33px;
+	width: 33px;
+	margin-top: 8px;
+	margin-left: 5px;
+}
+
+#brand {
+	font-size: 20px;
+	margin-left: 0px;
+}
+
+#items {
+	margin-left: 100px;
+}
+
+#resume {
+	margin-right: 90px;
+}
+
+ul {
+	list-style: none;
+}
+
+html, body {
+   height: 100%;
+}
+
+/*body {
+	background: url("background.jpg") no-repeat center fixed;
+	background-size: cover;
+}*/
+
+
+
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Muthukumaran PK</title>
+    <link rel="icon" type="image/png" href="res/icon.png"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/main.css"/>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+
+</head>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<!-- Brand -->
+    		<div class="navbar-header">
+    			<a href="index.html" class="navbar-left"><img id="brand_img" src="res/icon.png"></a>
+      			<a class="navbar-brand" id="brand" href="index.html">MUTHUKUMARAN PK</a>
+    		</div>
+  		
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav" id="items">
+					<li class="active"><a href="index.html">Home</a></li>
+					<!-- Dropdown -->
+					<li class="dropdown">
+				 		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">My Profile <span class="caret"></span></a>
+					 	<ul class="dropdown-menu" id="menu">
+					 		<li><a href="html/skills.html">Skills</a></li>
+					 		<li><a href="#">Experience</a></li>
+					 		<li><a href="#">Projects</a></li>
+					 		<li><a href="#">Interests</a></li>
+				 		</ul>
+					</li> 
+					<li><a href="html/groundup.html" target="_blank">Ground Up</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right" id="resume">
+					<li><a href="external_libraries/pdfjs/web/viewer.html?file=Resume.pdf" target="_blank">View Resume</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</nav> 
+
+
+	<!-- Middle box -->	
+	<div class= container id="middlebox">
+		<div class="row" style="height: 100%">
+			<div class="col-md-5">
+				<!-- Picture -->
+				<div class="col-md-12" id="imagebox">
+					<img src="res/profile_pic.jpg"/>
+				</div>
+				<!-- Information -->
+				<div class="col-md-12">
+					<table class="info"> 
+						<tr class="info_row">
+							<td>
+								<img src="res/NYULogo.jpg"/>
+							</td>
+							<td>
+								 <p>NYU Tandon School of Engineering</p>
+							</td>
+						</tr>
+						<tr class="info_row">
+							<td>
+								<img src="res/ComputerEngineering.jpg"/>
+							</td>
+							<td>
+								<p>Masters in Computer Engineering</p>
+							</td>
+						</tr>	
+						<tr class="info_row">
+							<td>
+								<img src="res/Java.png"/>
+							</td>
+							<td>
+								<p>JAVA Developer</p>
+							</td>
+						</tr>
+						<tr class="info_row" id="Longboard">
+							<td>
+								<img src="res/Longboard.jpeg"/>
+							</td>
+							<td>
+								<p>Longboarder</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div> 
+			<!-- Description -->
+			<div class="col-md-7" id="description">
+				<h1>Description</h1>
+				<p>Hi I am Muthukukmaran lakjlasjdflajdsfaldjfldsjf aljdsflasjdflkjs
+				alskdjflsjdf alkjdfksa fjls alkjdslfsjf
+				laksjfdl lkjsdf al lkjdfla kdjsf lsj lakdjf 
+				lsjdfl ljsdlkf lj l</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Sticky Sidebar -->
+<!-- 	<ul id="sidebar"> 
+		<li> <img src="res/github.png" id="github"/> </li>
+		<li> <img src="res/linkedin.png" id="linkedin"/> </li>
+		<li> <img src="res/facebook.png" id="facebook"/> </li>
+		<li> <img src="res/twitter.png" id="twitter"/> </li>
+	</ul> -->
+	<div id="sidebardiv">
+	  <a id="github" href="https://github.com/Abmuthu" target="_blank" class="image" title="Github" data-toggle="tooltip" data-placement="left" title="Hooray!"><img src="res/github.png"/></a>
+
+	  <a href="https://www.linkedin.com/in/muthukumaranpk?trk=hp-identity-name" target="_blank" class="image"
+	  data-toggle="tooltip" data-placement="left" title="LinkedIn"><img src="res/linkedin.png"/></a>
+
+	  <a href="https://www.facebook.com/muthu.kumaran.520" target="_blank" class="image" data-toggle="tooltip" data-placement="left" title="Facebook"><img src="res/facebook.png"/></a>
+
+	  <a href="https://twitter.com/muthukumaran02" target="_blank" class="image" data-toggle="tooltip" data-placement="left" title="Twitter"><img src="res/twitter.png"/></a> 
+	</div>
+
+    <!-- Javascript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script>
+   		$(function () { $("[data-toggle = 'tooltip']").tooltip(); });
+	</script>
+</body>
+</html>

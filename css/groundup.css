@@ -1,0 +1,20 @@
+h1 {
+	position: relative;
+	text-align: center;
+	top: 10%;
+	font-size: 50px;
+}
+
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	background: url("../res/groundup_bg.jpg") no-repeat center fixed;
+	background-size: cover;
+}
+
+/** {
+	border: 2px solid red;
+}*/

@@ -1,0 +1,23 @@
+#chart_div {
+	display: block;
+	position: relative;
+	height: 700px;
+	width: 900px;
+	margin-left: 25%;
+	bottom: 4%;
+	z-index: -1;
+	/*margin-top: 2%; */
+    /*margin: 0 auto;*/
+    /*border: 2px solid red;*/
+}
+
+#level_indicator {
+	display: inline-block;
+	position: absolute;
+	left: 23.5%;
+	top: 35%;
+}
+
+/** {
+	border: 2px solid red;
+}*/

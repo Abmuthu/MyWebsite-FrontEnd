@@ -1,0 +1,18 @@
+#sidebardiv {
+	position: fixed;
+	top: 40%;
+	right: 0%;
+	background-color: #2C2C2C;
+	border-radius: 4px 0px 0px 4px;
+	
+}
+
+.image {
+	display: block;
+	padding: 7px;
+}
+
+.image img {
+	height: 40px;
+	width: 40px;
+}
