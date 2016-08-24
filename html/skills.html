@@ -6,17 +6,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="../css/main.css"/>
-  </script>
-
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <!-- CSS -->
+    <link rel="stylesheet" href="../css/skills.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-
-    <link rel="stylesheet" href="../css/skills.css">
+    <script>
+        $(function(){
+            $("#navigationbar").load("navbar.html", function(){
+              $('#myprofile').addClass('active');
+            });
+            $("#sidebar").load("sidebar.html");
+        });
+    </script>
 
     <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -58,32 +63,7 @@
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <!-- Brand -->
-          <div class="navbar-header">
-            <a href="#" class="navbar-left"><img id="brand_img" src="../res/icon.png"></a>
-              <a class="navbar-brand" id="brand" href="#">MUTHUKUMARAN PK</a>
-          </div>
-        
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav" id="items">
-            <li><a href="../index.html">Home</a></li>
-            <!-- Dropdown -->
-            <li class="active dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">My Profile <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Interests</a></li>
-              </ul>
-            </li> 
-            <li><a href="#">Groud Up</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav> 
+    <div id="navigationbar"></div>
 
     <!--Div that will hold the column chart-->
     <h1 style="text-align: center;"> SKILL CHART </h1>
@@ -111,14 +91,8 @@
     </table>
     <div id="chart_div"></div>
 
-    <!-- Sidebar -->
-    <div id="sidebardiv">
-    <a href="https://github.com/Abmuthu" target="_blank" class="image" ><img src="../res/github.png"/></a>
-    <a href="https://www.linkedin.com/in/muthukumaranpk?trk=hp-identity-name" target="_blank" class="image" ><img src="../res/linkedin.png"/></a>
-    <a href="https://www.facebook.com/muthu.kumaran.520" target="_blank" class="image" ><img src="../res/facebook.png"/></a>
-    <a href="https://twitter.com/muthukumaran02" target="_blank" class="image" ><img src="../res/twitter.png"/></a> 
-  </div>
-
+  <!-- Sidebar -->
+    <div id="sidebar"></div>
 
   <!-- Javascript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
