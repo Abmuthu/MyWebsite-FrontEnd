@@ -11,7 +11,9 @@
 /*.ht {
 	height: 100px;
 }*/
-
+a {
+    outline: 0;
+}
 
 ul {
 	list-style: none;
