@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Muthukumaran PK</title>
+    <link rel="icon" type="image/png" href="res/icon.png"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/main.css"/>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	
+ 
+    <!-- Script for loading elements  -->
+	<script>
+        $(function(){
+            $('#home').addClass('active');
+            $("#middle").load("html/middlebox.html");
+            $("#skills").click(function(){
+              $("#home").removeClass('active');
+              $("#myprofile").addClass('active');
+            	$("#middle").load("html/skillchart.html", function(){
+                  $("#middle").find("#chart_div").each(function(){
+                      drawChart();
+                  });
+              });
+
+
+        	  });
+        });
+    </script>
+
+    <!-- Scripts for Google Chart -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'subject');
+        data.addColumn('number', 'Level');
+        data.addRows([
+          ['JAVA', 3],
+          ['HTML', 2],
+          ['CSS', 2],
+          ['JAVASCRIPT', 1]
+        ]);
+
+        // Set chart options
+        var options = {'title':'',
+                       'width':900,
+                       'height':800};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }    
+    </script>
+</head>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<!-- Brand -->
+    		<div class="navbar-header">
+    			<a href="index.html" class="navbar-left"><img id="brand_img" src="res/icon.png"></a>
+      			<a class="navbar-brand" id="brand" href="index.html">MUTHUKUMARAN PK</a>
+    		</div>
+  		
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav" id="items">
+					<li id="home"><a href="index.html">Home</a></li>
+					<!-- Dropdown -->
+					<li id="myprofile" class="dropdown">
+				 		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">My Profile <span class="caret"></span></a>
+					 	<ul class="dropdown-menu" id="menu">
+					 		<li><a href="#" id="skills">Skills</a></li>
+					 		<li><a href="#" id="experience">Experience</a></li>
+					 		<li><a href="#" id="projects">Projects</a></li>
+					 		<li><a href="#" id="interests">Interests</a></li>
+				 		</ul>
+					</li> 
+					<li><a href="html/groundup.html" target="_blank">Ground Up</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right" id="resume">
+					<li><a href="external_libraries/pdfjs/web/viewer.html?file=Resume.pdf" target="_blank">View Resume</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</nav> 
+
+	<!-- Middle element -->	
+	<div id="middle"></div>
+
+	<!-- Sidebar -->
+	<div id="sidebardiv">
+    <a id="github" href="https://github.com/Abmuthu" target="_blank" class="image" title="Github" data-toggle="tooltip" data-placement="left" title="Hooray!"><img src="res/github.png"/></a>
+
+    <a href="https://www.linkedin.com/in/muthukumaranpk?trk=hp-identity-name" target="_blank" class="image"
+    data-toggle="tooltip" data-placement="left" title="LinkedIn"><img src="res/linkedin.png"/></a>
+
+    <a href="https://www.facebook.com/muthu.kumaran.520" target="_blank" class="image" data-toggle="tooltip" data-placement="left" title="Facebook"><img src="res/facebook.png"/></a>
+
+    <a href="https://twitter.com/muthukumaran02" target="_blank" class="image" data-toggle="tooltip" data-placement="left" title="Twitter"><img src="res/twitter.png"/></a> 
+  </div>
+
+  <!-- Javascript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- Script for tooltip(hint while hoverin social network images) -->
+  <script>
+      $(function () { $("[data-toggle = 'tooltip']").tooltip(); });
+  </script>
+
+</body>
+</html>
