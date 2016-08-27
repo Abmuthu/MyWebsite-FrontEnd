@@ -4,7 +4,7 @@
 @import url("skills.css");
 @import url("interests.css");
 @import url("experience.css");
-
+@import url("projects.css");
 
 /** {
 	border: 2px solid brown;
@@ -26,6 +26,10 @@ html, body {
    overflow: hidden;
 }
 
+#heading {
+	text-align: center;
+	font-family: serif;
+}
 /*body {
 	background: url("background.jpg") no-repeat center fixed;
 	background-size: cover;

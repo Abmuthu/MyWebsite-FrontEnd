@@ -1,0 +1,35 @@
+#projects_table {
+	border-collapse: separate;
+	border-spacing: 0;
+	margin-top: 5%;
+	margin-left: 37%;
+}
+
+.projects_column {
+	/*border: 2px solid blue;*/
+	border: 2px solid black;
+	width: 500px;
+	padding-left: 10px;
+	border-radius: 7px;
+}
+
+.projects_head {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.projects_para {
+	/*margin-top: -8px;*/
+	margin-left: 10px;
+}
+
+.projects_link {
+	margin-left: 10px;
+}
+
+
+.spacer {
+	height: 40px;
+}
+
+
