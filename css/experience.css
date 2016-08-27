@@ -1,0 +1,24 @@
+#mycontainer {
+	position: relative;
+	height: 150px;
+	width: 600px;
+	border: 2px solid blue;
+	border-radius: 5px;
+	margin-top: 10%;
+}
+
+
+#one {
+	/*border: 2px solid brown;*/
+	height: 148px;
+	border-right: 1px solid blue;
+}
+
+
+#pic {
+	position: relative;
+	/*border: 2px solid green;*/
+	right: 16px;
+	top: 35px;
+	
+}
