@@ -51,7 +51,7 @@ $("#middle").load("html/interest.html"
             $("#interests").click(function(){
               $("#home").removeClass('active');
               $("#myprofile").addClass('active');
-              $("#middle").load("html/interest.html", function(){
+              $("#middle").load("html/interests.html", function(){
                 $('.carousel').carousel({
                   interval: 2000
                  });
@@ -61,6 +61,11 @@ $("#middle").load("html/interest.html"
               $("#home").removeClass('active');
               $("#myprofile").addClass('active');
               $("#middle").load("html/experience.html");
+            });
+            $("#projects").click(function(){
+              $("#home").removeClass('active');
+              $("#myprofile").addClass('active');
+              $("#middle").load("html/projects.html");
             });
         });
     </script>
