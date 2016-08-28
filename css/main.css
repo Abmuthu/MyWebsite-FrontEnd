@@ -10,9 +10,7 @@
 	border: 2px solid brown;
 }*/
 
-/*.ht {
-	height: 100px;
-}*/
+
 a {
     outline: 0;
 }
@@ -23,17 +21,26 @@ ul {
 
 html, body {
    height: 100%;
-   overflow: hidden;
+   /*overflow: hidden;*/
+   text-align: center;
 }
 
 #heading {
-	text-align: center;
+	/*position: relative;*/
+	display: inline-block;
 	font-family: serif;
+	background-color: black;
+	padding: 10px;
+	color: white;
+	opacity: 0.8;
+	/*left: 30%;*/
+
 }
-/*body {
-	background: url("background.jpg") no-repeat center fixed;
+
+body {
+	background: url("../res/main_bg.jpg") no-repeat center fixed;
 	background-size: cover;
-}*/
+}
 
 
 
