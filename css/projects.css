@@ -23,6 +23,8 @@
 .projects_para {
 	/*margin-top: -8px;*/
 	margin-left: 10px;
+	padding-right: 10px;
+	text-align: justify;
 }
 
 .projects_link {
