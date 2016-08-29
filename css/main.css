@@ -29,10 +29,11 @@ html, body {
 	/*position: relative;*/
 	display: inline-block;
 	font-family: serif;
-	background-color: black;
+	/*background-color: rgba(0, 0, 0, 0.5);*/
 	padding: 10px;
 	color: white;
 	opacity: 0.8;
+	border-radius: 5px;
 	/*left: 30%;*/
 
 }
